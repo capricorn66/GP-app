@@ -1,0 +1,16 @@
+/* news
+*******************************************************************/
+
+.page-start {
+    background-color: $app-color-1;
+    height: 100vh;
+    color: $gray-600;
+    header {
+        position: relative;
+        .img-brand {
+            width: 160px;
+            height: auto;
+        }
+    }
+}
+

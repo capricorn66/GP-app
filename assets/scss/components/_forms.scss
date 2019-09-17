@@ -1,0 +1,85 @@
+/* forms
+*******************************************************************/
+
+label {
+    font-size: 15px;
+    color: $gray-700;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid rgba($white,.6);
+    color: $white;
+    background-color: $app-color-1;
+    border-radius: 0;
+    height: 32px;
+    font-size: 16px;
+    box-shadow: none;
+    // Placeholder
+    &::placeholder {
+        color: $gray-600;
+        opacity: 1;
+    }
+    &:focus {
+        box-shadow: none;
+        background-color: transparent;
+        border-bottom-color: $app-color-5;
+        + .input-group-append {
+            .btn {
+                border-bottom-color: $app-color-5;
+            }
+        }
+    }
+    &:disabled,
+    &[readonly] {
+        background-color: rgba($white,.6);
+    }
+
+    &.form-control-lg {
+        height: 56px;
+    }
+    &.form-control-sm {
+        height: 32px;
+    }
+
+}
+.daterangepicker select,
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+        opacity: 0;
+    }
+    background: $white $icon-arrow-down no-repeat right 16px center !important;
+    background-size: 16px;
+    padding-right: 40px;
+
+}
+
+textarea.form-control {
+
+    &.form-control-lg {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+.input-group > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child) {
+    border-right: 0;
+}
+.input-group-append .btn {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba($white,.6);
+    padding: 0 8px;
+    i {
+        color: $gray-700;
+        font-size: 20px;
+    }
+}

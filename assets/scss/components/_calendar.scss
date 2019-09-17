@@ -1,0 +1,68 @@
+/* calendar
+*******************************************************************/
+
+.calendar-item {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: $white;
+    box-shadow: 0 0 4px 0 rgba($gray-700, .4);
+    margin-bottom: 16px;
+    .calendar-item-date {
+        background-color: $app-color-1;
+        color: $white;
+        text-align: center;
+        padding: 2px 8px;
+        min-width: 80px;
+        .calendar-item-date-day-name {
+            color: $gray-700;
+        }
+        .calendar-item-date-day-num {
+            font-size: 24px;
+        }
+        .calendar-item-date-month {
+            color: $gray-400;
+        }
+        .calendar-item-date-year {
+            color: $gray-700;
+        }
+    }
+    .calendar-item-body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 8px 8px;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        .calendar-item-body-icon {
+            padding: 0 12px 0 8px;
+            font-size: 22px;
+            color: rgba($gray-700, .6);
+        }
+        .calendar-item-body-desc {
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            padding-right: 16px;
+            .calendar-item-body-time-range {
+                margin-top: 4px;
+                margin-bottom: 8px;
+            }
+            .calendar-item-body-event-type {
+
+            }
+            .calendar-item-body-event-name {
+                color: rgba($gray-700, .6);
+            }
+        }
+        .calendar-item-body-type {
+            background-color: $app-color-7;
+            border-radius: 4px;
+            padding: 8px 4px;
+            color: $white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
